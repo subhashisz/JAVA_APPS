@@ -7,8 +7,8 @@ public class EvenOddVersionTwo {
 
 	public static void main(String[] args) {
 		Runnable oddEven = () -> {
-			while (atomicNumber.get() < 10) {
-				synchronized (atomicNumber) {
+			synchronized (atomicNumber) {
+				while (atomicNumber.get() < 10) {
 					if ((atomicNumber.get() % 2 == 0) && "Even".equals(Thread.currentThread().getName())) {
 						System.out.println("Even :" + atomicNumber.getAndIncrement());
 					} else {
@@ -18,11 +18,9 @@ public class EvenOddVersionTwo {
 			}
 		};
 
-		Thread t1 = new Thread(oddEven);
-		t1.setName("Even");
+		Thread t1 = new Thread(oddEven,"Even");
 		t1.start();
-		Thread t2 = new Thread(oddEven);
-		t2.setName("Odd");
+		Thread t2 = new Thread(oddEven,"Odd");
 		t2.start();
 
 	}
