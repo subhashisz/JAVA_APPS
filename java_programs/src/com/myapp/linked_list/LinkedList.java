@@ -27,7 +27,6 @@ public class LinkedList {
 	public void insertAtFirst(int item) {
 		Node node = new Node();
 		node.data = item;
-		// node.next = null;
 		node.next = head;
 		head = node;
 	}

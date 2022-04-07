@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 import com.myapp.models.Dish;
 import com.myapp.models.Employee;
 
-public class PractiveOne {
+public class PracticeOne {
 	public static void main(String[] args) {
 
 		// print employee based on department

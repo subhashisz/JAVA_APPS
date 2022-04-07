@@ -8,6 +8,18 @@ public class Queue {
 	int front;
 	int rear;
 
+	public int getSize() {
+		return size;
+	}
+
+	public boolean isEmpty() {
+		return getSize() == 0;
+	}
+
+	public boolean isFull() {
+		return getSize() == queue.length;
+	}
+
 	public void enQueue(int data) {
 		if (!isFull()) {
 			queue[rear] = data;
@@ -30,18 +42,6 @@ public class Queue {
 		for (int i = 0; i < size; i++) {
 			System.out.print(queue[(front + i) % 5] + " ");
 		}
-	}
-
-	public int getSize() {
-		return size;
-	}
-
-	public boolean isEmpty() {
-		return getSize() == 0;
-	}
-
-	public boolean isFull() {
-		return getSize() == queue.length;
 	}
 
 }

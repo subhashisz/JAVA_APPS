@@ -1,0 +1,27 @@
+1. Even odd thread
+
+2. count vowels in a string
+
+3. 	 Find the minimum number of merge operations to make an array palindrome Given  a list of non-negative integers, find the minimum
+     number of merge operations	  to make it a pallindrome. A merge operation can only be performed on two adjacent elements. The 
+     result of a merge operation is that the two adjacent  elements are replaced with their sum. 
+     
+     For example,
+      Input: [6, 1, 3, 7]
+	  Output: 1 Explanation: [6, 1, 3, 7] —> Merge 6 and 1 —> [7, 3, 7] 
+	 
+	  Input: [6, 1, 4, 3, 1, 7] 
+	  Output: 2 
+	  Explanation: [6, 1, 4, 3, 1, 7] —> Merge  6 and 1 —> [7, 4, 3, 1, 7] —> Merge 3 and 1 —> [7, 4, 4, 7]
+	  
+	  Input: [1, 3, 3, 1] 
+	  Output: 0 Explanation: The list is already a pallindrome
+	  
+4. 	 Evaluate each character to output a total score:	  
+	  Vowels are worth 5 points. All other characters are worth of 1 point. Any immediately repeated character is worth its current 
+	  value plus the value of the previous character. Any words with more than 5 characters get 5 bonus points added. be sure to write 
+	  unit test that proves the program is correct.
+	  
+	  "Test" = 1+5+1+1=8 "Balloon"=1+5+1+(1+1)+5+(5+5)+1+5 bonus=30
+	  
+	
