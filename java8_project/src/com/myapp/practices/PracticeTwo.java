@@ -21,15 +21,15 @@ public class PracticeTwo {
 
 		// menu.stream().map(d -> d.getType()).distinct().forEach(System.out::println);
 		String s = menu.stream().map(Dish::getName).collect(joining());
+		
 		// Fibonacci series
-		 Stream.iterate(new int[] { 0, 1 }, t -> new int[] { t[1], t[0] + t[1]
-		 }).limit(10).map(t -> t[0])
-		 .forEach(System.out::println);
-		//Stream.iterate(0, n -> n + 2 ).limit(10).forEach(System.out::println);
+		 Stream.iterate(new int[] { 0, 1 }, t -> new int[] { t[1], t[0] + t[1] }).limit(10).map(t -> t[0]).forEach(System.out::println);
+		
+		 //Stream.iterate(0, n -> n + 2 ).limit(10).forEach(System.out::println);
 		 
 		List<int[]> aList= Stream.iterate(new int[] { 0, 1 }, t -> new int[] { t[1], t[0] + t[1]})
-		 .limit(10)
-		 .collect(toList());
+		                         .limit(10)
+		                         .collect(toList());
 		
 		int [][]arr1=new int[5][5];
 		

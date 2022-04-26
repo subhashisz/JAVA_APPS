@@ -26,7 +26,7 @@ public class StringManipulations {
 	}
 
 	// 3) Reverse String
-	public String reverseRecursively(String str) {
+	public static String reverseString(String str) {
 		if (str.isEmpty()) {
 			return str;
 		}
@@ -95,7 +95,6 @@ public class StringManipulations {
 	}
 
 	// Find longest sub-string in a given string
-
 	public String longestSubString(String str) {
 		if (str.isEmpty()) {
 			return null;
@@ -118,7 +117,9 @@ public class StringManipulations {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(new StringManipulations().longestSubString("stackoverflow"));
+		// System.out.println(new
+		// StringManipulations().longestSubString("stackoverflow"));
+		System.out.println(reverseWordsInString("Hello how are you"));
 
 	}
 

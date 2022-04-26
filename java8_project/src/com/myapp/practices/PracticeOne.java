@@ -22,7 +22,7 @@ public class PracticeOne {
 		
 		// way 1 (java 8 Method)
 		empByDept.forEach((key, value) -> {
-			//System.out.println(key + " : " + value);
+			System.out.println(key + " : " + value);
 		});
 		
 		//On Java 10+:

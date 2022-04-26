@@ -11,8 +11,8 @@ public class StreamPractices {
 		String str = "a quick brown fox jumps over aaaa lazy dog";
 		List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u');
 
-		Long vowelCount = str.chars().filter(c -> vowels.contains((char) c)).count();
-		Long consonentCount = str.chars().filter(c -> !vowels.contains((char) c)).filter(n -> (n >= 'a') && (n <= 'z'))
+		long vowelCount = str.chars().filter(c -> vowels.contains((char) c)).count();
+		long consonentCount = str.chars().filter(c -> !vowels.contains((char) c)).filter(n -> (n >= 'a') && (n <= 'z'))
 				.count();
 		// System.out.println(vowelCount);
 		// Pattern.compile(" + ").splitAsStream(str).map(w -> new
